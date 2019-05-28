@@ -3,3 +3,7 @@
 ################################################################################
 
 /CWBlue/CWBlue/CWBlue/obj
+/CWBlue/CWBlue/CWBlue.Android/obj
+/CWBlue/CWBlue/CWBlue.iOS/obj
+/CWBlue/CWBlue/CWBlue.UWP/obj
+/CWBlue/.vs/CWBlue/v15/Server/sqlite3/db.lock
