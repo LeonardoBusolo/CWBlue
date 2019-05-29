@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CWBlue.View;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace CWBlue
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterView();
         }
 
         protected override void OnStart()
