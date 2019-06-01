@@ -17,6 +17,7 @@ namespace CWBlue.View
 		public MenuView ()
 		{
 			InitializeComponent ();
+            IniciliarLista();
 		}
 
         public void IniciliarLista()
@@ -32,14 +33,14 @@ namespace CWBlue.View
 
             paginas.Add(new Pagina
             {
-                Titulo = "Minhas Reservas",
+                Titulo = "Fazer Reserva",
                 Icone = "",
                 PaginaView = typeof(HomeView)
             });
 
             paginas.Add(new Pagina
             {
-                Titulo = "Cobranças",
+                Titulo = "Minhas Reservas",
                 Icone = "",
                 PaginaView = typeof(HomeView)
             });
@@ -51,11 +52,40 @@ namespace CWBlue.View
                 PaginaView = typeof(HomeView)
             });
 
+            paginas.Add(new Pagina
+            {
+                Titulo = "Minhas Compras",
+                Icone = "",
+                PaginaView = typeof(HomeView)
+            });
+
+            paginas.Add(new Pagina
+            {
+                Titulo = "Perfil",
+                Icone = "",
+                PaginaView = typeof(HomeView)
+            });
+
+            paginas.Add(new Pagina
+            {
+                Titulo = "Meus Planos",
+                Icone = "",
+                PaginaView = typeof(HomeView)
+            });
+
+            paginas.Add(new Pagina
+            {
+                Titulo = "Sair",
+                Icone = "",
+                PaginaView = typeof(HomeView)
+            });
+
+            lvMenu.ItemsSource = paginas;
         }
 
         private void LvMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+           
         }
     }
 }

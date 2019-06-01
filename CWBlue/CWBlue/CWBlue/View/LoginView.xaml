@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CWBlue.View.LoginView"
+             BackgroundImage="recepcao.jpeg"
+             Opacity="0.8"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="420"/>
+                <RowDefinition Height="280"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="#fafafa"
+                   Opacity="0.5"
+                   Margin="45">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="60" />
+                            
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Frame Grid.Row="0"
+                               Grid.Column="0">
+                            <StackLayout>
+                                <Label Text="PROCURA UM ESPAÇO"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1"
+                               Grid.Column="0">
+                            <StackLayout>
+                                <Label Text="PARA CUIDAR DE SEUS CLIENTES"/>
+                            </StackLayout>
+                        </Frame>
+                        
+                    </Grid>
+                    
+                
+            </Frame>
+
+            <Frame Grid.Row="1"
+                   Grid.Column="0"
+                   BackgroundColor="#90a4ae"
+                   Opacity="0.95"
+                   CornerRadius="18"
+                   Margin="35">
+                <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             >
+                        <Entry Placeholder="E-mail                                          "/>
+                        <Entry Placeholder="Senha                                           "/>
+                        <Button Text="Login" 
+                                CornerRadius="20"
+                                BackgroundColor="Gray"/>
+                    </StackLayout>
+            </Frame>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

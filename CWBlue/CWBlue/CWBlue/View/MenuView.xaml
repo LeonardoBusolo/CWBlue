@@ -4,20 +4,26 @@
              x:Class="CWBlue.View.MenuView">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal"
-                         VerticalOptions="EndAndExpand"
-                         HorizontalOptions="CenterAndExpand"
-                         HeightRequest="25">
-                <Label Text="TESTE"></Label>
-            
+            <StackLayout HorizontalOptions="CenterAndExpand"    
+                         HeightRequest="150"
+                         WidthRequest="350"
+                         Opacity="0.2"
+                         Padding="10"
+                         Margin="5"
+                         BackgroundColor="CornflowerBlue">
+                <Label Text="Logo CWBlue"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center"/>
+
             </StackLayout>
             <ListView x:Name="lvMenu"
                       ItemSelected="LvMenu_ItemSelected">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate>  
                         <ImageCell 
                             ImageSource="{Binding Icone}"
-                            Text="{Binding Titulo}"/>
+                            Text="{Binding Titulo}"
+                            TextColor="CornflowerBlue"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             
